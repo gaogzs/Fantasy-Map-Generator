@@ -899,7 +899,7 @@
     cells.province = new Uint16Array(cells.i.length); // cell state
     const percentage = +provincesInput.value;
     if (states.length < 2 || !percentage) {states.forEach(s => s.provinces = []); return;} // no provinces
-    const max = percentage == 100; // max growth
+    const max = percentage == 1000; // max growth
 
     const forms = {
       Monarchy:{County:11, Earldom:3, Shire:1, Landgrave:1, Margrave:1, Barony:1},
